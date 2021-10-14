@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheetForCal.css">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+    </head>
+    <body>
+        <script src = "scriptforCal.js"></script>
+        <div id = "calculator">
+            <div id = "display">
+                <div id = "screen"></div>
+                <div id = "showResult"></div>
+
+            </div>
+            
+            <div id = "keyboard">
+                <div style = "display:block;">
+                    <button  onclick = "allClear()"class = "button"><b>AC</b></button>
+                    <button onclick = "clearLastCharacter()" class = "button"><b>C</b></button>
+                    <button onclick = "takeInput('%')" class = "button"><b>%</b></button>
+                    <button onclick = "takeInput('+')" class = "button"><b>+</b></button>
+                </div>
+                <div style = "display:block;">
+                    <button onclick = "takeInput(7)" class = "button"><b>7</b></button>
+                    <button onclick = "takeInput(8)" class = "button"><b>8</b></button>
+                    <button  onclick = "takeInput(9)"class = "button"><b>9</b></button>
+                    <button onclick = "takeInput('-')"class = "button" class = "button"><b>-</b></button>
+                </div>
+
+                <div style = "display:block;">
+                    <button type="button" onclick = "takeInput(4)" class = "button"><b>4</b></button>
+                    <button onclick = "takeInput(5)" class = "button"><b>5</b></button>
+                    <button  onclick = "takeInput(6)"class = "button"><b>6</b></button>
+                    <button onclick = "takeInput('*')" class = "button"><b>*</b></button>
+                </div>
+
+                <div style = "display:block;">
+                    <button  onclick = "takeInput(1)"class = "button"><b>1</b></button>
+                    <button onclick = "takeInput(2)" class = "button"><b>2</b></button>
+                    <button onclick = "takeInput(3)" class = "button"><b>3</b></button>
+                    <button onclick = "takeInput('/')" class = "button"><b>/</b></button>
+                </div>
+
+                <div style = "display:block;">
+                    <button onclick = "takeInput(0)" class = "button"><b>0</b></button>
+                    <button onclick = "takeMultiCharacter('00')" class = "button"><b>00</b></button>
+                    <button  onclick = "takeInput('.')" class = "button"><b>.</b></button>
+                    <button onclick = "takeInput('=')" class = "button"><b>=</b></button>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
